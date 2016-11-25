@@ -1,0 +1,7 @@
+.DS_Store
+.idea
+my-awesome-site
+_config.yml_
+_site
+.sass-cache
+.jekyll-metadata
