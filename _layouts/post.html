@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<article class="page wrapper article">
+
+    <h1>{{ page.title | escape }}</h1>
+
+    <div class="metadata">
+
+        <ul class="tags">
+            {% for tag in page.tags %}
+            <li class="variant-b"><a href="/tags/#{{tag}}">{{tag}}</a></li>
+            {% endfor %}
+        </ul>
+
+        <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
+    </div>
+
+
+  {{ content }}
+
+  {% if site.disqus.shortname %}
+    {% include disqus_comments.html %}
+  {% endif %}
+</article>

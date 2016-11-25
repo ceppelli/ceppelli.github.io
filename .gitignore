@@ -1,0 +1,8 @@
+.DS_Store
+.idea
+skills-app
+skills-app-old
+_config.yml_
+_site
+.sass-cache
+.jekyll-metadata

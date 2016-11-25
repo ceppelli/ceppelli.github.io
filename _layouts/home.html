@@ -6,13 +6,15 @@ layout: default
 
 <div class="page wrapper">
 
-    <div class="section-header float-container"><h2 class="article">Posts</h2></div>
+  <div class="section-header float-container"><h2 class="article">Posts</h2></div>
+
+  {{ content }}
 
     <ul class="item-list grid">
-        <!--ul class="item-list compact grid latest"-->
-        {% assign posts = site.posts | sort: 'date' | reverse  %}
-        {% for post in posts %}
-        <li>
+    <!--ul class="item-list compact grid latest"-->
+    {% assign posts = site.posts | sort: 'date' | reverse  %}
+    {% for post in posts %}
+      <li>
             <article class="article">
                 <span class="date">{{ post.date | date: "%d %b %Y" }}</span>
                 <span class="type">Article</span>
@@ -28,8 +30,8 @@ layout: default
                 <p><a aria-label="{{ post.title | escape }}" href="{{ post.url | relative_url }}">{{ post.description | escape }}</a></p>
             </article>
         </li>
-        {% endfor %}
-    </ul>
+    {% endfor %}
+  </ul>
 
 
 
