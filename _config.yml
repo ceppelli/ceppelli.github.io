@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: ceppelli.github.io
-email: luca@ceppelli.com
+#email: luca@ceppelli.com
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -26,26 +26,19 @@ url: "https://ceppelli.github.io" # the base hostname & protocol for your site, 
 twitter_username: lucaceppelli
 github_username:  ceppelli
 
-# Build settings         minima jekyll-theme-cayman jekyll-theme-slate
+# Build settings         minima jekyll-swiss jekyll-theme-cayman jekyll-theme-slate
 markdown: kramdown
 theme: minima
 gems:
   - jekyll-feed
   - jekyll-sitemap
+  # - jekyll-seo-tag  # https://github.com/jekyll/jekyll-seo-tag
+  # - jekyll-gist
+
 exclude:
   - Gemfile
   - Gemfile.lock
-  - easeljs-0.8.2.combined.js
   - index.md_
-  - main-min.js
-  - matter.js
-  - matter.min.js
-  - skills-app.html
-  - skills-app.js
-  - skills.html
-  - skills.js
-  - skills-build.sh
-  - SkillsStyleKit.js
-  - tweenjs-0.6.2.combined.js
-  - my-awesome-site
+  - skills-app
+  - skills-app-old
 
