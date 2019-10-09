@@ -21,7 +21,8 @@ author: by me
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 description: "@"
-google_analytics: UA-91228915-1
+copyright: "Copyright © Luca Ceppelli 2019"
+#google_analytics: UA-91228915-1
 show_downloads: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ceppelli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -33,16 +34,49 @@ linkedin_username_id:  luca-ceppelli-66b6794
 # Build settings         minima jekyll-swiss jekyll-theme-cayman jekyll-theme-slate
 markdown: kramdown
 theme: minima
-gems:
+# highlighter: rouge
+
+
+# permalink: /:categories/:year/:month/:day/:title.html
+# permalink: /:year/:month/:day/:title.html
+# permalink: /:month-:day-:year/:title.html
+
+#permalink:  /posts/:year:month:day-:title.html
+permalink:  /posts/:title/
+
+# github-pages plugins
+# Default
+# - jekyll-coffeescript
+# - jekyll-gist
+# - jekyll-github-metadata
+# - jekyll-paginate
+# - jekyll-relative-links
+# - jekyll-optional-front-matter
+# - jekyll-readme-index
+# - jekyll-default-layout
+# - jekyll-titles-from-headings
+# Optional
+# - jekyll-feed
+# - jekyll-redirect-from
+# - jekyll-seo-tag  # https://github.com/jekyll/jekyll-seo-tag
+# - jekyll-sitemap
+# - jekyll-avatar
+# - jemoji
+# - jekyll-mentions
+# - jekyll-include-cache
+
+plugins:
+  - jekyll-redirect-from
+  - jekyll-avatar
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-scalafiddle
   # - jekyll-seo-tag  # https://github.com/jekyll/jekyll-seo-tag
   # - jekyll-gist
 
 exclude:
   - Gemfile
-  - Gemfile.lock
-  - index.md_
+  - Gemfile.loc
   - skills-app
   - skills-app-old
 

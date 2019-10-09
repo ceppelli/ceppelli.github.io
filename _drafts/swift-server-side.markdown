@@ -1,9 +1,8 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-description: "Test page description"
-date:   2017-01-31 15:57:58 +0100
-categories: jekyll lang
+title:  "The server side of Swift"
+#date:   2017-02-24 00:00:00 +0100
+categories: lang swift
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
@@ -19,22 +18,9 @@ print_hi('Tom')
 #=> prints 'Hi, Tom' to STDOUT.
 {% endhighlight %}
 
-scala
+Check out the [Swift.org Homepage][swift-lang] for more info about the language.
 
-{% highlight scala %}
-sealed abstract class Interval(val symbol: String) {
-  def isReverse = symbol startsWith "R"
-}
-{% endhighlight %}
-
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
+[swift-lang]: https://swift.org/
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
 [jekyll-talk]: https://talk.jekyllrb.com/
-
-
-
-
-{% avatar ceppelli %}
