@@ -1115,15 +1115,15 @@ footer a {
         padding-top: 20px;
     }
 
-    .item-list.grid {
+    .item-list.grid, .gallery.grid {
         display: block;
     }
 
-    .item-list.grid > li {
+    .item-list.grid > li, .gallery.grid > li {
         margin-bottom: 20px;
     }
 
-    .item-list.grid > li:last-child {
+    .item-list.grid > li:last-child, .item-list.grid > li:last-child {
         margin-bottom: 0;
     }
 
