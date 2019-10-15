@@ -19,12 +19,11 @@ I started designing the desk with `Fusion360`. It took some time to get used to 
 
 Below the model of the desk
 
-{% include fusion360.html url="https://myhub.autodesk360.com/ue2971a56/shares/public/SH56a43QTfd62c1cd968d83fd8934e0f9bf4?mode=embed"%}
+{% include fusion360.html url="https://myhub.autodesk360.com/ue2971a56/shares/public/SH56a43QTfd62c1cd9686b17cfad482edbe0?mode=embed"%}
 
 and the one of the bookshelf
 
 {% include fusion360.html url="https://myhub.autodesk360.com/ue2971a56/shares/public/SH56a43QTfd62c1cd968b23a5b621df72685?mode=embed" %}
-
 
 All the process, from design through the choice of the wood, the cutting, the assembly, the sanding, till the final painting took 3 weeks, definitely a challenging job but I'm enjoying the result every days.
 
