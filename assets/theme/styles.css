@@ -250,6 +250,12 @@ ul {
     background-image: url(/assets/theme/video-gray.svg);
 }
 
+/* Gallery */
+.gallery.grid {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 /* Headings */
 h1 {
     font-size: 2em;
@@ -412,7 +418,7 @@ a.browse-all:hover {
 }
 
 .grid > * {
-    display: flex;
+    /* display: flex; */
 }
 
 /* Articles */

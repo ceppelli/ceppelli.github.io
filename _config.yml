@@ -44,10 +44,13 @@ theme: minima
 #permalink:  /posts/:year:month:day-:title.html
 permalink:  /posts/:title/
 
+permalink:  /notes/:title/
+
 
 collections:
   notes:
     output: true
+    permalink:  /notes/:title/
 
 # github-pages plugins
 # Default
