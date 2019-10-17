@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "New Ball Bearings"
+title: "New Ball Bearings"
 description: "Today I receive some ball bearings I order some days ago. They are really huge!!!"
-date:   2019-09-09 00:00:00 +0100
-updated: 2019-09-09
+image: /notes/big-bearings/04.png
+date: 2019-09-09
+last_modified_at: 2019-09-09
 tags: [CNC]
 permalink: /notes/big-bearings/
 published: true

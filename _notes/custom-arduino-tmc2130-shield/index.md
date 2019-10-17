@@ -2,8 +2,9 @@
 layout: post
 title:  "Custom Arduino TMC Shield"
 description: "I created a custom Arduino shield with 4 TMC2130 SilentStepStick"
-date:   2019-01-04 00:00:00 +0100
-updated: 2019-01-04
+image: /notes/custom-arduino-tmc2130-shield/01.png
+date: 2019-01-04
+last_modified_at: 2019-01-04
 tags: [TMC, arduino, PCB]
 permalink: /notes/custom-arduino-tmc2130-shield/
 published: true

@@ -2,8 +2,9 @@
 layout: post
 title:  "HAKKO Fx-888"
 description: "The coolest iron solder ever"
-date:   2018-01-01 00:00:00 +0100
-updated: 2018-01-01
+image: /notes/hakko-fx888/05.png
+date: 2018-01-01
+last_modified_at: 2018-01-01
 tags: [PCB]
 permalink: /notes/hakko-fx888/
 published: true

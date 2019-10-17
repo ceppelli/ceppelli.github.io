@@ -1,22 +1,16 @@
-<header>
-
-  <div class="wrapper">
-
-    <h1><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
-
-    <p> by <span class="inline-block"><a href="https://twitter.com/{{%site.twitter_username%}}" rel="nofollow" target="_blank">Luca Ceppelli</a>.</span></p>
-
-    <nav>
-      <ul>
-        {% for my_page in site.pages %}
-          {% if my_page.title and my_page.title != "404" %}
-          <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title  | escape }}</a></li>
-          {% endif %}
-        {% endfor %}
-          <!--li class="search"><a href="/search">Search</a></li-->
-      </ul>
-    </nav>
-
-  </div>
-
-</header>
+    <header>
+      <div class="wrapper">
+        <h1><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
+        <p> by <span class="inline-block"><a href="https://twitter.com/{{%site.twitter_username%}}" rel="nofollow" target="_blank">Luca Ceppelli</a>.</span></p>
+        <nav>
+          <ul>
+            {%- for my_page in site.pages %}
+              {%- if my_page.title and my_page.title != "404" %}
+              <li><a href="{{ my_page.url | relative_url }}">{{ my_page.title  | escape }}</a></li>
+              {%- endif -%}
+            {%- endfor %}
+            <!--li class="search"><a href="/search">Search</a></li-->
+          </ul>
+        </nav>
+      </div>
+    </header>
