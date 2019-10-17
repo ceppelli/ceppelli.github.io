@@ -251,9 +251,18 @@ ul {
 }
 
 /* Gallery */
-.gallery.grid {
+.gallery.grid,
+.gallery.video {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.gallery.video > li {
+      margin-bottom: 20px;
+  }
+
+.gallery.video > li:last-child {
+    margin-bottom: 0;
 }
 
 /* Headings */
@@ -319,91 +328,6 @@ a.browse-all:hover {
 
 .tag-items .item-list {
     margin-top: 20px;
-}
-
-/* Sponsors */
-.sponsor {
-    display: block;
-    position: relative;
-    margin-top: 28px;
-    margin-bottom: 22px;
-    border-radius: 8px;
-    border: 2px solid #e6241e;
-    padding: 16px 10px 12px 10px;
-}
-
-.sponsor::before {
-    content: "Sponsor";
-    position: absolute;
-    top: -11px;
-    left: 10px;
-    line-height: 20px;
-    padding: 0 3px;
-    background-color: #fff;
-    color: #e6241e;
-    font-weight: bold;
-    text-transform: uppercase;
-    font-size: 12px;
-}
-
-.sponsor .header img {
-    margin: 0 10px 0 0;
-    height: 44px;
-}
-
-.sponsor .header img.rounded, .sponsorship .sponsor-list img.rounded {
-    border-radius: 8px;
-}
-
-.sponsor .header {
-    font-size: 1.3em;
-    text-decoration: none;
-    font-weight: bold;
-    line-height: 44px;
-    margin-bottom: 10px;
-}
-
-.sponsor p {
-    margin-top: 0;
-    margin-bottom: 12px;
-}
-
-.sponsor .footer {
-    line-height: 1.7em;
-}
-
-.sponsor .cta, .sponsorship .button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 0 6px;
-    background-color: #e6241e;
-    color: #fff;
-    border-radius: 8px;
-}
-
-.sponsor .note {
-    display: inline-block;
-    position: relative;
-    top: 1.3em;
-    float: right;
-    font-size: 0.7em;
-    line-height: 1.2em;
-    font-style: italic;
-    color: #e6241e;
-}
-
-.sponsor.compact {
-    margin-top: 30px;
-    padding-top: 12px;
-    line-height: 1.5em;
-}
-
-.sponsor.compact p {
-    margin-bottom: 8px;
-}
-
-.sponsor.compact .note {
-    top: 1.2em;
 }
 
 /* Grid */
@@ -1123,7 +1047,7 @@ footer a {
         margin-bottom: 20px;
     }
 
-    .item-list.grid > li:last-child, .item-list.grid > li:last-child {
+    .item-list.grid > li:last-child, .gallery.grid > li:last-child {
         margin-bottom: 0;
     }
 
@@ -1205,10 +1129,13 @@ footer a {
  */
 pre,
 code {
-    font-size: 15px;
     border: 1px solid #3b719c;
-    border-radius: 3px;
-    /*background-color: #eef;*/ }
+    border-radius: 3px; }
+
+a > code {
+
+    border: 1px solid #3b719c;
+    border-radius: 3px; }
 
 code {
     padding: 1px 5px; }

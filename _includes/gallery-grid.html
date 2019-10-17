@@ -2,7 +2,7 @@
     {% assign files = include.files | split: ',' %}
     {% for file in files %}
     <li>
-        <img class="img" src="{{ file }}" alt="{{ include.alt }}" style="display: block; border-radius: 8px; max-width:{{ include.max-width }}; width:{{ include.width }}%; height:auto; margin-left:auto; margin-right:auto;">
+        <img class="img" src="{{ file }}" alt="{{ include.alt }}" style="display: block; border-radius: 8px; max-width:{{ include.max-width }}; width:{{ include.width }}; height:auto; margin-left:auto; margin-right:auto;">
     </li>
     {% endfor %}
 </ul>
