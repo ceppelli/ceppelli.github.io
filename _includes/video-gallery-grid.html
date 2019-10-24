@@ -1,9 +1,18 @@
 <ul class="gallery video">
     {% assign files = include.files | split: ',' %}
     {% for file in files %}
+    {% assign item = file | split: '|' %}
+    {% assign file_src = item[0] %}
+    {% if item.size == 2 %}
+    {% assign file_poster = item[1] %}
+    {% else %}
+    {% assign file_poster = blank %}
+    {% endif %}
+
+
     <li>
-        <video controls alt="{{ include.alt }}" style="display: block; border-radius: 8px; max-width:{{ include.max-width }}; width:{{ include.width }}; height:auto; margin-left:auto; margin-right:auto;">
-            <source src="{{ file }}" type="video/mp4">
+        <video controls alt="{{ include.alt }}" poster="{{ file_poster }}" style="display: block; border-radius: 8px; max-width:{{ include.max-width }}; width:{{ include.width }}; height:auto; margin-left:auto; margin-right:auto;">
+            <source src="{{ file_src }}" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </li>

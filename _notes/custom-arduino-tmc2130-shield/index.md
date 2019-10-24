@@ -30,7 +30,7 @@ I bought the TMC2130 driver as [`SilentStepStick`][silentstepstick] modules from
 
 ## The Results
 
-{% include video-gallery-grid.html alt="video" max-width="640px" width="100%" height="360" files="m01s.mov,m02s.mov" %}
+{% include video-gallery-grid.html alt="video" max-width="640px" width="100%" height="360" files="m01s.mov|m01.png,m02s.mov|m02.png" %}
 
 
 [tmc2130]: https://www.trinamic.com/products/integrated-circuits/details/tmc2130/
