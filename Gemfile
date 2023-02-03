@@ -8,10 +8,10 @@ source "https://rubygems.org"
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll", "~> 3.8.5"
+gem "jekyll", "~> 3.9.2"
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
-gem "minima", "~> 2.5.0"
+gem "minima", "~> 2.5.1"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -19,12 +19,13 @@ gem "minima", "~> 2.5.0"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-feed", "~> 0.11.0"
+  gem "jekyll-feed", "~> 0.15.1"
   gem "jekyll-redirect-from"
   gem "jekyll-avatar"
   gem "jekyll-sitemap"
-  # gem 'jekyll-scalafiddle'
-  gem 'jekyll-gist'
+  # gem "jekyll-scalafiddle"
+  gem "jekyll-gist"
+  gem "kramdown-parser-gfm"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -49,3 +50,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # https://github.com/scalafiddle/scalafiddle-core/tree/master/integrations/jekyll
 #gem 'jekyll-scalafiddle'
+
+# Ruby 3.0 no longer comes with webrick
+# Hi! In general, we recommend (and support) running the github-pages gem
+# with the Ruby version we're running in production (2.7.x). We don't yet
+# support Ruby 3.0.0. Ruby 2.7.x still has webrick so I'd recommend using
+# that until we've upgraded for your GitHub Pages needs!
+# gem "webrick", "~> 1.7"

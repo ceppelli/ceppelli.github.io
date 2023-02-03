@@ -1,0 +1,70 @@
+<!--p>The above will result in this editable playground:</p-->
+<!--pre class="playground"><code class="editable edition2018">{{ include.code }}</code></pre-->
+<!--pre class="playground"><code class="editable edition2018">{{ include.code }}</code></pre-->
+<!--p>Note the new <code>Undo Changes</code> button in the editable playgrounds.</p-->
+
+
+<link rel="stylesheet" href="https://rust-lang.github.io/mdBook/css/chrome.css">
+<!--link rel="stylesheet" href="https://rust-lang.github.io/mdBook/css/print.css" media="print"-->
+<!-- Fonts -->
+<link rel="stylesheet" href="https://rust-lang.github.io/mdBook/FontAwesome/css/font-awesome.css">
+<!--link rel="stylesheet" href="https://rust-lang.github.io/mdBook/fonts/fonts.css"-->
+<!-- Highlight.js Stylesheets -->
+<link rel="stylesheet" href="https://rust-lang.github.io/mdBook/highlight.css">
+<link rel="stylesheet" href="https://rust-lang.github.io/mdBook/tomorrow-night.css">
+<link rel="stylesheet" href="https://rust-lang.github.io/mdBook/ayu-highlight.css">
+
+
+<p role="menuitem_" class="theme theme-selected" id="navy_">Navy</p>
+<!-- rust-pg -->
+<script>
+
+const pgElems = document.querySelectorAll('pre > code');
+
+console.log(pgElems.length + "======================");
+
+pgElems.forEach((item) => {
+
+  console.log(item.parentElement);
+  item.parentElement.classList.add("playground");
+  //item.classList.add("editable", "edition2018", "ace_dark", "ace-tomorrow-night");
+  item.classList.remove("language-rust");
+  item.classList.add("editable", "edition2018", "ace-tomorrow-night");
+
+  // editable edition2018 ace_editor ace_hidpi hljs ace-tomorrow-night ace_dark
+});
+
+const tt = ["navy", "ayu", "rust", "light", "coal"];
+var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+console.log("default_theme:" + default_theme);
+//if (theme === null || theme === undefined) { theme = default_theme; }
+
+</script>
+<script>
+  window.playground_line_numbers = true;
+</script>
+<script>
+  window.playground_copyable = false;
+</script>
+<script src="https://rust-lang.github.io/mdBook/ace.js"></script>
+<script src="https://rust-lang.github.io/mdBook/mode-rust.js"></script>
+<script src="https://rust-lang.github.io/mdBook/editor.js"></script>
+
+<script src="https://rust-lang.github.io/mdBook/highlight.js"></script>
+<script src="https://rust-lang.github.io/mdBook/book.js"></script>
+
+
+<!--
+<script src="https://rust-lang.github.io/mdBook/ace.js"></script>
+<script src="https://rust-lang.github.io/mdBook/editor.js"></script>
+<script src="https://rust-lang.github.io/mdBook/mode-rust.js"></script>
+<script src="https://rust-lang.github.io/mdBook/theme-dawn.js"></script>
+<script src="https://rust-lang.github.io/mdBook/theme-tomorrow_night.js"></script>
+<script src="https://rust-lang.github.io/mdBook/elasticlunr.min.js"></script>
+<script src="https://rust-lang.github.io/mdBook/mark.min.js"></script>
+<script src="https://rust-lang.github.io/mdBook/searcher.js"></script>
+<script src="https://rust-lang.github.io/mdBook/clipboard.min.js"></script>
+<script src="https://rust-lang.github.io/mdBook/highlight.js"></script>
+<script src="https://rust-lang.github.io/mdBook/book.js"></script>
+-->
+
