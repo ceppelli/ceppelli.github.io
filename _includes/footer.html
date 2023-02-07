@@ -1,16 +1,16 @@
     <footer>
         <p>{{ site.copyright }}</p>
         <p>
-        {%- if site.github_username %}
-            {% include icon-github.html username=site.github_username %}
+        {%- if site.github.username %}
+            {% include icon-github.html username=site.github.username %}
         {%- endif %}
 
-        {%- if site.twitter_username %}
-        |{% include icon-twitter.html username=site.twitter_username %}
+        {%- if site.twitter.username %}
+        |{% include icon-twitter.html username=site.twitter.username %}
         {%- endif %}
 
-        {%- if site.linkedin_username %}
-        |{% include icon-linkedin.html username=site.linkedin_username username_id=site.linkedin_username_id %}
+        {%- if site.linkedin.username %}
+        |{% include icon-linkedin.html username=site.linkedin.username username_id=site.linkedin.username_id %}
         {%- endif %}
 
         |<a href="{{ "/feed.xml" | relative_url }}">RSS</a>

@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://ceppelli.github.io/sitemap.xml
+Sitemap: https://ceppelli.com/sitemap.xml

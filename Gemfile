@@ -23,8 +23,9 @@ group :jekyll_plugins do
   gem "jekyll-redirect-from"
   gem "jekyll-avatar"
   gem "jekyll-sitemap"
+  gem "jekyll-seo-tag"
   # gem "jekyll-scalafiddle"
-  gem "jekyll-gist"
+  gem "jekyll-gist", "~> 1.5.0"
   gem "kramdown-parser-gfm"
 end
 

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: ceppelli.github.io
+title: ceppelli.com
 author: Luca Ceppelli
 #email: ...
 #description: > # this means to ignore newlines until "baseurl:"
@@ -25,11 +25,16 @@ copyright: "Copyright © Luca Ceppelli 2008-2023"
 google_analytics:
 #show_downloads: true
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://ceppelli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: lucaceppelli
-github_username:  ceppelli
-linkedin_username:  lucaceppelli
-linkedin_username_id:  luca-ceppelli-66b6794
+url: "https://ceppelli.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+twitter:
+  username: lucaceppelli
+  card: summary
+github:
+  username: ceppelli
+linkedin:
+  username:  lucaceppelli
+  username_id:  luca-ceppelli-66b6794
 
 # Build settings         minima jekyll-swiss jekyll-theme-cayman jekyll-theme-slate
 markdown: kramdown
@@ -92,7 +97,7 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   # - jekyll-scalafiddle
-  # - jekyll-seo-tag  # https://github.com/jekyll/jekyll-seo-tag
+  - jekyll-seo-tag  # https://github.com/jekyll/jekyll-seo-tag
   - jekyll-gist
 
 exclude:

@@ -1,7 +1,7 @@
     <header>
       <div class="wrapper">
         <h1><a class="site-title" href="{{ "/" | relative_url}}">{{ site.title | escape }}</a></h1>
-        <p> by <span class="inline-block"><a href="https://twitter.com/{{%site.twitter_username%}}" rel="nofollow" target="_blank">Luca Ceppelli</a>.</span></p>
+        <p> by <span class="inline-block"><a href="https://twitter.com/{{%site.twitter.username%}}" rel="nofollow" target="_blank">Luca Ceppelli</a>.</span></p>
         <nav>
           <ul>
             {%- for my_page in site.pages %}
