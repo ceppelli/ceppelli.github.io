@@ -21,8 +21,8 @@ author: Luca Ceppelli
 #  line in _config.yml. It will appear in your document head meta (for
 #  Google search results) and in your feed.xml site description.
 description: "The nerd side of me!!!"
-copyright: "Copyright © Luca Ceppelli 2019-2022"
-google_analytics: UA-91228915-1
+copyright: "Copyright © Luca Ceppelli 2008-2023"
+google_analytics:
 #show_downloads: true
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ceppelli.github.io" # the base hostname & protocol for your site, e.g. http://example.com
