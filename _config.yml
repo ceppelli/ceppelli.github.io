@@ -34,7 +34,8 @@ github:
   username: ceppelli
 linkedin:
   username:  lucaceppelli
-  username_id:  luca-ceppelli-66b6794
+  username_id:  ceppelli
+  #username_id:  luca-ceppelli-66b6794
 
 # Build settings         minima jekyll-swiss jekyll-theme-cayman jekyll-theme-slate
 markdown: kramdown
